@@ -39,8 +39,8 @@ export default [
         entries: [
           { find: './screens', replacement: './src/screens' }, // Adjust the path accordingly
         ],
-        'react': path.resolve( './node_modules/react'),
-        'react-dom': path.resolve( './node_modules/react-dom')
+        'react': path.resolve(path.dirname('')+ './node_modules/react'),
+        'react-dom': path.resolve(path.dirname('')+ './node_modules/react-dom')
       }),
     ],
   },
@@ -49,11 +49,6 @@ export default [
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     external: ['react', 'react-dom'],
     
-    plugins: [resolve(),dts(),
-      alias({
-        'react': path.resolve( './node_modules/react'),
-        'react-dom': path.resolve( './node_modules/react-dom')
-      }),
-    ],
+    plugins: [dts()],
   },
 ];
