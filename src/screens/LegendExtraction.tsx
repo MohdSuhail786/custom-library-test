@@ -9,6 +9,8 @@ import AnnotationPopup from "../components/AnnotationPopup/AnnotationPopup";
 import Toolbar from "../components/Toolbar/Toolbar";
 import ImageLoader from "../components/Loader/ImageLoader";
 import { ProjectSetupSteps, editorState, labelList } from "../constants/Constants";
+import '../App.css';
+import '../index.css';
 
 interface IProps {
     onContinue: () => void

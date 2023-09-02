@@ -1,3 +1,5 @@
+import '../App.css';
+import '../index.css';
 interface IProps {
     onContinue: () => void;
 }
