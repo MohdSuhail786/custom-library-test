@@ -1,0 +1,151 @@
+.left-side-bar {
+    background-color: white;
+    width: 300px;
+    height: calc(100% - 70px);
+    position: absolute;
+    left: 0px;
+    top: 55px;
+    border-right: 1px solid #e4e8eb;
+    padding: 15px 0 0 0;
+    .heading {
+        padding: 0 10px;
+        font-weight: 600;
+    }
+    .input-group {
+        display: flex;
+        line-height: 28px;
+        padding: 10px;
+        padding-top: 15px;
+        align-items: center;
+        position: relative;
+        .input {
+            width: 100%;
+            height: 35px;
+            line-height: 28px;
+            padding: 0 1rem;
+            padding-left: 2.5rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+            background-color: #f3f3f4;
+            color: #0d0c22;
+            transition: .3s ease;
+        }
+           
+        .input::placeholder {
+            color: #9e9ea7;
+        }
+           
+        .input:focus, input:hover {
+            outline: none;
+            border-color: rgb(86 76 234 / 40%);
+            background-color: #fff;
+            box-shadow: 0 0 0 4px rgb(76 95 234 / 10%);
+        }
+           
+        .icon {
+            position: absolute;
+            left: 1rem;
+            fill: #9e9ea7;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    .button-group {
+        padding: 10px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        .search {
+            &.disable {
+                background-color: #b3b3b3;
+                cursor: not-allowed;
+            }
+            pointer-events: auto;
+            word-wrap: break-word;
+            list-style: none;
+            font-family: inherit;
+            margin: 0;
+            overflow: visible;
+            text-transform: none;
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            box-shadow: 0 2px 0 rgba(0,0,0,.015);
+            cursor: pointer;
+            font-size: 14px;
+            height: 32px;
+            width: 100%;
+            line-height: 1.5715;
+            padding: 4px 15px;
+            position: relative;
+            text-align: center;
+            touch-action: manipulation;
+            transition: all .3s cubic-bezier(.645,.045,.355,1);
+            user-select: none;
+            white-space: nowrap;
+            outline: 0;
+            box-sizing: border-box;
+            align-items: center;
+            border-color: #d9d9d9;
+            border-radius: 5px;
+            display: flex;
+            font-weight: 600;
+            gap: 6px;
+            justify-content: center;
+            letter-spacing: .4px;
+            background-color: #4248ff;
+            color: #fff;
+        }
+    }
+    .converted-images-container {
+        border-top: 1px solid #e4e8eb;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 130px);
+        overflow-y: scroll;
+        width: 100%;
+        .no-item {
+            margin: 130px auto;
+            font-size: 0.9em;
+        }
+        .item {
+            &:nth-child(2) {
+                margin-top: 44px;
+            }
+            &:first-child {
+                padding: 10px;
+                background-color: white;
+                z-index: 1000;
+                width: calc(100% - 20px);
+                position: absolute;
+                top: 142px;
+                left: 0;
+            }
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #e4e8eb;
+            gap: 10px;
+            &.heading {
+                color: black;
+                span:last-child {
+                    margin-left: 10px;
+                }
+                span {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            &:hover {
+                background-color: hsla(0,1%,52%,.102);
+            }
+            span {
+                font-size: 0.9em;
+            }
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+}

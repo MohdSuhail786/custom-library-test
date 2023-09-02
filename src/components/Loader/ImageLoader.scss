@@ -1,0 +1,29 @@
+.image-loader-container {
+    height: calc(100% - 55px);
+    width: calc(100% - 300px);
+    position: absolute;
+    top: 55px;
+    left: 300px;
+    z-index: 9999;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loader {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .title {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 0.9em;
+    }
+}

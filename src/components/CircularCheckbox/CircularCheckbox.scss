@@ -1,0 +1,11 @@
+.circular-checkbox {
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .checked {
+    border-radius: 50%;
+    background-color: black;
+  }
+}
